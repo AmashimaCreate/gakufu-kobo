@@ -39,19 +39,11 @@ npm run build
 
 ## GitHub Pages
 
-公開予定URL：<https://amashimacreate.github.io/gakufu-kobo/>
+公開URL：<https://amashimacreate.github.io/gakufu-kobo/>
 
-`main` ブランチへpushすると、`.github/workflows/pages.yml` が自動で全テストを実行し、検証済みの `_site/` だけをGitHub Pagesへ公開します。初回のみリポジトリの **Settings → Pages → Build and deployment → Source** で **GitHub Actions** を選択してください。
+`main` ブランチへpushすると、`.github/workflows/pages.yml` が自動で全テストを実行し、検証済みの `_site/` だけをGitHub Pagesへ公開します。
 
 リンク共有用の1200×630px画像、canonical、Open Graph、Xカード、構造化データ、sitemapも上記URLで設定済みです。
-
-公開前に残る確認：
-
-- `gh auth login -h github.com` でGitHub CLIを再認証する
-- `gakufu-kobo` を独立した公開リポジトリとして作成する
-- PagesのSourceをGitHub Actionsにする
-- リポジトリ自体のSocial previewにも `og-image.png` を登録する
-- Safari／iOS Safari、Firefox、Chromium系ブラウザでの印刷プレビューとPDF保存
 
 GitHub Pagesでは任意のHTTPセキュリティヘッダーを設定できないため、独自ヘッダーが必要になった場合は別のホスティング先を使用してください。
 
