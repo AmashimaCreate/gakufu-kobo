@@ -1,0 +1,9 @@
+{
+  "name": "gakufu-kobo",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-site.js",
+    "check": "node --check boot.js && node --check app.js && node --check pdf-export.js && node --check scripts/build-site.js && node --check tests/public-readiness.js && node --check tests/deployment-readiness.js",
+    "test": "npm run check && node tests/regression.js && node tests/public-readiness.js && npm run build && node tests/deployment-readiness.js"
+  }
+}
